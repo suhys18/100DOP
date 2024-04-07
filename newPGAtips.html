@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGAtipsBest</title>
+    <!-- <link rel="stylesheet" href="PGatip.css"> -->
+    <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />  
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>   -->
+    <style>
+        html , body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black ;
+}
+    .block{
+        border: 5px solid transparent;
+        border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+        border-image-slice: 1;
+        background-color: rgb(214, 178, 178);
+        padding: 10px;
+        letter-spacing: normal;
+
+        min-width: 500px;
+        min-height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+    .btn{
+        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 20px;
+        border-radius: 20cm;
+        color: white;
+        background-image: linear-gradient(to right ,red , blue , grey , black , violet , orange);
+        height: inherit;
+        width: inherit;
+        border: 0px;
+        height: 100px;
+        width: inherit;
+        transition: scale 1s;
+    }
+    button a{
+        color: white;
+        font-size: xx-large;
+        letter-spacing: 0.3rem;
+    }
+    .btn:hover{
+        scale: 5;
+    }
+    </style>
+
+</head>
+<body>
+<div class="block">
+    <script>
+        alert("WELCOME! \nPress Enter")
+        let bill = prompt("Enter total bill amount : ")
+        let tip = prompt("enter a % that you would like to tip : ")
+        let people = prompt("Total No. of guests ? ")
+        let x = (bill + (tip/100)*bill)/people
+        alert("You should tip : Rupees" + x)
+    </script> 
+    <button class="btn">
+        <a href="https://youtu.be/dQw4w9WgXcQ?feature=shared"> Click here for full reciept.</a>
+    </button>  
+</div>
+   
+</body>
+</html>

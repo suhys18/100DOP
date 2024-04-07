@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="PGatip.css"> -->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />  
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>  
+    <style>
+        html , body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black ;
+}
+    .block{
+        border: 5px solid transparent;
+        border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+        border-image-slice: 1;
+        background-color: rgb(200, 200,200);
+        padding: 10px;
+        letter-spacing: normal;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+    .btn{
+        padding: 5px;
+        margin: 20px;
+        border-radius: 20cm;
+        color: white;
+        background-image: linear-gradient(to right ,red , blue , grey , black , violet , orange);
+        height: inherit;
+        width: inherit;
+        transition: scale 3s;
+    }
+    .btn:hover{
+        scale: 5;
+    }
+    </style>
+
+</head>
+<body>
+<div class="block">
+    <py-script>
+        print("WELCOME TO THUNGA'S TIP CALCULATOR!!")
+
+        bill = float(input("what is the total bill?"))
+        print(f"${bill}")
+        tip = int(input("How much tip would you like to give 10 12 15: ")) 
+        print(f"{tip}%")
+        people = int(input("how many people will split the bill?: "))
+        print(people)
+        x = float((bill + (tip/100)*bill)/people)
+
+        print(f"Each person should pay: {x}")
+    </py-script> 
+    <button class="btn">
+        <a href="https://youtu.be/dQw4w9WgXcQ?feature=shared"> Click here for full reciept.</a>
+    </button>  
+</div>
+   
+</body>
+</html>
